@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>CSED-Week</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">PocketCode</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Über PocketCode</a></li>
+            <li class="active"><a href="#installation.html">Installation</a></li>
+            <li><a href="stepbystep.html">Step-by-step Anleitung</a></li>
+            <li><a href="#contact">Erster Remix</a></li>
+            <li><a href="#contact">Remix hochladen</a></li>
+            <li><a href="#contact">Feedback</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Installation von PocketCode</h1>
+        <p class="lead">Es gibt zwei Möglichkeiten, wie man PocketCode installieren kann:</p>
+	<ul class="nav nav-tabs">
+	  <li id="browserclass" class="active"><a href="#" onclick="javascript:changeTab('browser','playstore','browserclass','playstoreclass');">Vom PC aus</a></li>
+	  <li id="playstoreclass"><a href="#" onclick="javascript:changeTab('playstore','browser','playstoreclass','browserclass');">Vom Handy aus</a></li>
+	</ul>
+
+	
+
+	<div id="browser">
+		<p class="lead">
+			<b>Schritt 1:</b> Wenn Sie gerade vor einem PC sitzen, klicken Sie auf folgenden Link: <a href="https://play.google.com/store/apps/details?id=org.catrobat.catroid" target="_blank">ab zur App</a>.			
+		</p>					
+		<p class="lead">
+			<b>Schritt 2:</b> Klicken Sie nun auf 'Installieren'. Falls Sie nicht angemeldet sind, melden Sie sich an.
+			<div>
+				<img src="pictures/b1.png"></img>
+				<img src="pictures/b2.png"></img>
+			</div>
+		</p>			
+		<p class="lead">
+			<b>Schritt 3:</b> Das App installiert sich jetzt automatisch auf Ihrem Handy. (Hinweis: Damit sich das App installieren kann, muss das Handy eine Internetverbindung haben)	
+		</p>			
+		
+	</div>
+	<div id="playstore" style="display:none;">
+		<p class="lead">
+			<b>Schritt 1:</b> Öffnen Sie das Playstore-App.
+		</p>	
+		<p class="lead">
+			<b>Schritt 2:</b> Geben Sie in die Suchleiste 'PocketCode' ein und wählen es aus. Klicken Sie anschließend auf 'Installieren'.
+			<div>
+				<img src="pictures/p1.png"></img>
+				<img src="pictures/p2.png"></img>
+				<img src="pictures/b5.png"></img>
+			</div>
+		</p>	<p class="lead">
+			<b>Schritt 3:</b> Akzeptieren Sie die App-Bedinungen. PocketCode wird nun installiert. 	
+		</p>	
+	</div>
+		
+	<ul class="pager">
+  	  <li><a href="index.html">Zurück</a></li>
+	  <li><a href="stepbystep.html">Weiter</a></li>
+	</ul>
+
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+			function changeTab(id1, id2, id3, id4)
+			{
+				document.getElementById(id1).style.display="";
+				document.getElementById(id2).style.display="none";
+				document.getElementById(id3).setAttribute("class", "active");
+				document.getElementById(id4).classList.remove("active");
+			}
+    </script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
+
